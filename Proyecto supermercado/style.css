@@ -8,6 +8,7 @@ body{
     background: url(fotos/Supermercado.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    display: auto;
 }
 /*Estilos para el encabezado*/
 
@@ -171,3 +172,73 @@ body{
     font-size: 25px;
 }
 
+/*!-correxiones*/
+.boton{
+    align-items: center;
+}
+.botones{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Donegal One', serif;
+    font-family: 'Lexend Peta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+display:inline-flex;
+margin: 20px;
+padding: 5px 30px;
+border-radius: 8px;
+border: 2px solid #48e;
+color: rgb(5, 16, 34);
+cursor: pointer;
+}
+
+.botones:hover{
+    background:#48e;
+    color: #fff;
+
+
+}
+.botones:active{
+    background: #133677;
+
+}
+.botones:hover{
+    background:#48e;
+    color: #fff;
+
+
+}
+.botones:active{
+    background: #133677;
+
+}
+/*LOGOS*/
+.fa-brands fa-instagram fa-2x{
+    align-items: 100%;
+    display:inline-flex;
+    margin: 20px;
+    padding: 5px 30px;
+    border-radius: 8px;
+    border: 2px solid #48e;
+    color: rgb(5, 16, 34);
+    cursor: pointer;
+
+}
+.fa-brands fa-instagram fa-2x:hover{
+    background:#48e;
+    color: #fff;
+
+
+}
+.fa-brands fa-instagram fa-2x:active{
+    background: #133677;
+
+}
+.fa-brands fa-instagram fa-2x:hover{
+    background:#48e;
+    color: #fff;
+
+
+}
+.fa-brands fa-instagram fa-2x:active{
+    background: #133677;
+
+}
