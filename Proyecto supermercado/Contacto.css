@@ -108,7 +108,7 @@ body{
 
 .dir {
     color: aliceblue;
-    margin-left: 520px;
+    margin-left: 590px;
     margin-top: 40px;
 }
 
@@ -135,3 +135,7 @@ body{
     font-size: 25px;
 }
 
+hr{
+    border: 1px solid #ccc;
+    margin: 20px 0
+}
