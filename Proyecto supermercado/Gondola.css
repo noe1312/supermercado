@@ -10,7 +10,6 @@ body{
     background-repeat: no-repeat;
 }
 /*Estilos para el encabezado*/
-
 .container{
     width: 90%;
     max-width: 1200px;
@@ -52,7 +51,6 @@ body{
     padding-bottom: 5px;
 }
 /*Fin de Estilos para el encabezado*/
-
 /*Menù lateral*/
 #btn-menu{
     display: none;
@@ -204,7 +202,6 @@ body{
     background:#48e;
     color: #fff;
 
-
 }
 .add-to-cart:active{
     background: #133677;
@@ -213,7 +210,6 @@ body{
 .add-to-cart:hover{
     background:#48e;
     color: #fff;
-
 
 }
 .add-to-cart:active{
