@@ -22,7 +22,6 @@ body {
 }
 .container .btn-menu .logo {
   float: left;
-  line-height: 100px;
 }
 .container .btn-menu label {
   color: #fff;
@@ -39,10 +38,7 @@ body {
 
   text-align: center; /* Alineación centrada para dispositivos pequeños */
 }
-.container .menu {
-  float: right;
-  line-height: 100px;
-}
+
 .container .menu a {
   display: inline-block;
   padding: 15px;
