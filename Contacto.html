@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,76 +21,116 @@
   </head>
 
   <body>
-    <div class="dir">
-      <h1 class="nombre-titulo">Ubicacion</h1>
-    </div>
+    <!-- Header con menú de navegación -->
     <header class="header">
-      <div class="container">
+      <div class="container d-flex justify-content-between align-items-center">
         <div class="btn-menu">
           <label for="btn-menu">☰</label>
+        </div>
+        <div class="logo">
+          <h1>Supermercado "La Séptima"</h1>
         </div>
       </div>
     </header>
     <div class="capa"></div>
-    <!--	--------------->
+
+    <!-- Menú lateral -->
     <input type="checkbox" id="btn-menu" />
     <div class="container-menu">
       <div class="cont-menu">
         <nav>
           <h2 style="color: #fff">Mayorista</h2>
           <a href="Inicio.html">Inicio</a>
-          <a href="Gondola.html">Gondola</a>
+          <a href="Gondola.html">Góndola</a>
           <a href="Contacto.html">Contacto</a>
         </nav>
         <label for="btn-menu">✖️</label>
       </div>
     </div>
-    <iframe
-      class="DIRECCIÓN"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4279540259386!2d-68.57536268790916!3d-31.539867902125575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141887cc490c5%3A0x4fd21743e994cc91!2sLas%20m%C3%A1s%20ricas%20empanadas%20de%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1700525628568!5m2!1ses-419!2sar"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
 
-    <section class="dir1">
-      <h2>Contacto</h2>
-      <br />
-      <li>[mayoristala7@hotmail.com]</li>
-      <br />
-      <li>[Número de teléfono]</li>
-      <br />
-      <li>[José Ignacio de la Roza Oeste 806, San Juan, San Juan ]</li>
+    <!-- Contenedor para las secciones de Ubicación y Contacto -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Columna de la ubicación -->
+        <div class="col-md-6">
+          <h2 class="nombre-titulo">Ubicación</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4279540259386!2d-68.57536268790916!3d-31.539867902125575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141887cc490c5%3A0x4fd21743e994cc91!2sLas%20más%20ricas%20empanadas%20de%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1700525628568!5m2!1ses-419!2sar"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Columna de los datos de contacto -->
+        <div class="col-md-6">
+          <h2>Datos de Contacto</h2>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> contacto@supermercadola7.com</li>
+            <li><strong>Teléfono:</strong> +54 264 123-4567</li>
+            <li>
+              <strong>Dirección:</strong> Av. Libertador 1234, San Juan,
+              Argentina
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer con enlaces a redes sociales -->
+    <footer
+      style="
+        background-color: #f2f2f2;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      "
+    >
+      <div class="container text-center">
+        <h3 style="color: #333; font-weight: bold">
+          Síguenos en nuestras redes
+        </h3>
+        <ul class="d-flex justify-content-center list-unstyled gap-4 mt-3">
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              style="color: #1da1f2; text-decoration: none"
+              ><i class="fa-brands fa-twitter fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              style="color: #d6249f; text-decoration: none"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.whatsapp.com"
+              target="_blank"
+              style="color: #25d366; text-decoration: none"
+              ><i class="fa-brands fa-whatsapp fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+        <p style="color: #666; margin-top: 15px">
+          © 2024 Supermercado La Séptima. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
   </body>
-  <hr />
-  <footer>
-    <ul class="item">
-      <li>
-        <a
-          href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Des"
-          ><i class="fa-brands fa-twitter fa-2x"></i
-        ></a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"
-          ><i class="fa-brands fa-instagram fa-2x"></i
-        ></a>
-      </li>
-      <li>
-        <a href="https://web.whatsapp.com/"
-          ><i class="fa-brands fa-whatsapp fa-2x"></i
-        ></a>
-      </li>
-    </ul>
-  </footer>
 </html>
