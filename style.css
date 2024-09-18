@@ -226,8 +226,8 @@ body {
 
 /* FOOTER */
 footer {
-  background-color: #f2f2f2;
-  padding: 20px 0;
+  background-color: #e5e5e5;
+  padding: 20px;
   width: 100%;
   text-align: center;
 }
@@ -238,10 +238,16 @@ footer .footer-links {
   gap: 20px;
   margin-top: 10px;
 }
+footer .social-link {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+}
 
 footer .social-link i {
-  color: #333;
+  color: #000;
   transition: color 0.3s ease;
+  font-size: 2.5rem;
 }
 
 footer .social-link:hover i {
@@ -262,10 +268,12 @@ footer .footer-text {
 /* Estilos específicos para los íconos en hover */
 footer .social-link:hover .fa-twitter {
   color: #1da1f2;
+  text-decoration: none;
 }
 
 footer .social-link:hover .fa-instagram {
   color: #d6249f;
+  text-decoration: none;
 }
 
 footer .social-link:hover .fa-whatsapp {

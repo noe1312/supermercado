@@ -5,7 +5,7 @@
 
 body {
   background: url(fotos/fondo-gris-liso_53876-108462.avif);
-  background-size: 100vw 60vh;
+  background-size: 100vw 25vh;
   background-repeat: no-repeat;
 }
 
@@ -62,6 +62,13 @@ body {
 /* contactos */
 .contacto {
   padding-bottom: 100%;
+}
+#sec-contacto {
+  color: rgb(65, 63, 63);
+}
+#datos {
+  padding-top: 200px;
+  padding-left: 10px;
 }
 
 /* Menú lateral */
