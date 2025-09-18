@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Góndola - Supermercado La Séptima</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../estilos/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>MAYORISTA <span>"La Séptima"</span></h1>
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Buscar productos..."
+              id="searchInput"
+            />
+            <button type="button" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <nav class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="#">Góndola</a>
+            <a href="Contacto.html">Contacto</a>
+          </nav>
+          <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <main class="products-main">
+      <div class="container">
+        <!-- Category Filter -->
+        <div class="category-filter">
+          <button class="filter-btn active" onclick="filterProducts('all')">
+            Todos
+          </button>
+          <button class="filter-btn" onclick="filterProducts('bebidas')">
+            Bebidas
+          </button>
+          <button class="filter-btn" onclick="filterProducts('fideos')">
+            Fideos
+          </button>
+          <button class="filter-btn" onclick="filterProducts('higiene')">
+            Higiene
+          </button>
+          <button class="filter-btn" onclick="filterProducts('carnes')">
+            Carnes
+          </button>
+          <button class="filter-btn" onclick="filterProducts('verduras')">
+            Verduras
+          </button>
+        </div>
+
+        <!-- Bebidas Section -->
+        <section class="product-category" data-category="bebidas">
+          <div class="category-header">
+            <h2>Bebidas</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card" data-id="1">
+              <img
+                src="../fotos/coca-cola.jpg"
+                alt="Coca Cola"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Coca Cola 2.25L</h3>
+                <p class="product-description">Bebida gaseosa cola</p>
+                <div class="product-price">$2,500</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(1, 'Coca Cola 2.25L', 2500, 'fotos/coca-cola.jpg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="2">
+              <img
+                src="https://images.pexels.com/photos/1292294/pexels-photo-1292294.jpeg"
+                alt="Agua Mineral"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Agua Mineral 2L</h3>
+                <p class="product-description">Agua mineral natural</p>
+                <div class="product-price">$800</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(2, 'Agua Mineral 2L', 800, 'https://images.pexels.com/photos/1292294/pexels-photo-1292294.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="3">
+              <img
+                src="https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg"
+                alt="Jugo de Naranja"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Jugo de Naranja 1L</h3>
+                <p class="product-description">Jugo natural de naranja</p>
+                <div class="product-price">$1,200</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(3, 'Jugo de Naranja 1L', 1200, 'https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Fideos Section -->
+        <section class="product-category" data-category="fideos">
+          <div class="category-header">
+            <h2>Fideos</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card" data-id="4">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg"
+                alt="Fideos Spaghetti"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Fideos Spaghetti 500g</h3>
+                <p class="product-description">Pasta italiana premium</p>
+                <div class="product-price">$900</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(4, 'Fideos Spaghetti 500g', 900, 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="5">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg"
+                alt="Fideos Mostachol"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Fideos Mostachol 500g</h3>
+                <p class="product-description">Pasta corta tradicional</p>
+                <div class="product-price">$850</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(5, 'Fideos Mostachol 500g', 850, 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Higiene Section -->
+        <section class="product-category" data-category="higiene">
+          <div class="category-header">
+            <h2>Productos de Higiene</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card" data-id="6">
+              <img
+                src="https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg"
+                alt="Detergente"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Detergente Líquido 3L</h3>
+                <p class="product-description">Limpieza profunda</p>
+                <div class="product-price">$3,200</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(6, 'Detergente Líquido 3L', 3200, 'https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="7">
+              <img
+                src="https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg"
+                alt="Papel Higiénico"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Papel Higiénico x12</h3>
+                <p class="product-description">Suave y resistente</p>
+                <div class="product-price">$2,800</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(7, 'Papel Higiénico x12', 2800, 'https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Carnes Section -->
+        <section class="product-category" data-category="carnes">
+          <div class="category-header">
+            <h2>Carnes</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card" data-id="8">
+              <img
+                src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg"
+                alt="Carne de Res"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Carne de Res 1kg</h3>
+                <p class="product-description">Corte premium</p>
+                <div class="product-price">$8,500</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(8, 'Carne de Res 1kg', 8500, 'https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="9">
+              <img
+                src="https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg"
+                alt="Pollo"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Pollo Entero 2kg</h3>
+                <p class="product-description">Pollo fresco de granja</p>
+                <div class="product-price">$4,200</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(9, 'Pollo Entero 2kg', 4200, 'https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Verduras Section -->
+        <section class="product-category" data-category="verduras">
+          <div class="category-header">
+            <h2>Verduras</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card" data-id="10">
+              <img
+                src="../fotos/choclo.webp"
+                alt="Choclo"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Choclo x6 unidades</h3>
+                <p class="product-description">Choclo fresco de temporada</p>
+                <div class="product-price">$1,800</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(10, 'Choclo x6 unidades', 1800, 'fotos/choclo.webp')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="11">
+              <img
+                src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
+                alt="Tomates"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Tomates 1kg</h3>
+                <p class="product-description">Tomates frescos</p>
+                <div class="product-price">$1,500</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(11, 'Tomates 1kg', 1500, 'https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card" data-id="12">
+              <img
+                src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
+                alt="Lechuga"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Lechuga Criolla</h3>
+                <p class="product-description">Lechuga fresca y crujiente</p>
+                <div class="product-price">$800</div>
+                <button
+                  class="add-to-cart-btn"
+                  onclick="addToCart(12, 'Lechuga Criolla', 800, 'https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg')"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Carrito de Compras</h3>
+        <button class="close-cart" onclick="toggleCart()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">
+          <i class="fas fa-credit-card"></i>
+          Finalizar Compra
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Síguenos en nuestras redes</h3>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <p>
+            &copy; 2024 Supermercado La Séptima. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="gondola.js"></script>
+  </body>
+</html>
