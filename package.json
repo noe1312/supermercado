@@ -1,0 +1,21 @@
+{
+  "name": "supermercado-la-septima",
+  "version": "1.0.0",
+  "description": "Supermercado La Séptima - Mayorista website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "start": "npx http-server . -p 3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "supermercado",
+    "mayorista",
+    "ecommerce"
+  ],
+  "author": "Supermercado La Séptima",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

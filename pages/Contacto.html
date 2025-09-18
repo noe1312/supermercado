@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Supermercado La Séptima</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../estilos/styles.css " />
+  </head>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>MAYORISTA <span>"La Séptima"</span></h1>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Buscar productos..."
+            id="searchInput"
+          />
+          <button type="button" class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html">Inicio</a>
+          <a href="gondola.html">Góndola</a>
+          <a href="Contacto.html">Contacto</a>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- Header con menú de navegación -->
+    <header class="header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="btn-menu">
+          <label for="btn-menu">☰</label>
+        </div>
+      </div>
+    </header>
+    <div class="capa"></div>
+
+    <!-- Contenedor para las secciones de Ubicación y Contacto -->
+    <section class="container my-5" id="sec-contacto">
+      <div class="row">
+        <!-- Columna de la ubicación -->
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4279540259386!2d-68.57536268790916!3d-31.539867902125575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141887cc490c5%3A0x4fd21743e994cc91!2sLas%20más%20ricas%20empanadas%20de%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1700525628568!5m2!1ses-419!2sar"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Columna de los datos de contacto -->
+        <div class="col-md-6" id="datos">
+          <h2>Datos de Contacto</h2>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> contacto@supermercadola7.com</li>
+            <li><strong>Teléfono:</strong> +54 264 123-4567</li>
+            <li>
+              <strong>Dirección:</strong> Av. Libertador 1234, San Juan,
+              Argentina
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer con enlaces a redes sociales -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Síguenos en nuestras redes</h3>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <p>
+            &copy; 2024 Supermercado La Séptima. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
